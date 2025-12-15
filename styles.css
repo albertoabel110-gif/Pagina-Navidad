@@ -35,7 +35,7 @@ h1 {
     margin-top: 30px; 
 }
 
-/* Movimiento general */
+
 .tree-wrapper {
     position: relative;
     animation: balanceo 4s ease-in-out infinite;
@@ -47,7 +47,7 @@ h1 {
     100% { transform: rotate(-2deg); }
 }
 
-/* Estrella */
+
 .estrella {
     position: absolute;
     top: -38px;
@@ -61,7 +61,7 @@ h1 {
     to { filter: brightness(1.6); }
 }
 
-/* Árbol */
+
 .tree {
     position: relative;
     margin: auto;
@@ -72,7 +72,7 @@ h1 {
     border-bottom: 230px solid #0f8a3c;
 }
 
-/* Capas */
+
 .tree::before {
     content: '';
     position: absolute;
@@ -93,7 +93,7 @@ h1 {
     border-bottom: 130px solid #0e7c3a;
 }
 
-/* Guirnaldas */
+
 .guirnalda {
     position: absolute;
     width: 180px;
@@ -110,7 +110,7 @@ h1 {
     left: -70px;
 }
 
-/* Tronco */
+
 .trunk {
     width: 45px;
     height: 55px;
@@ -118,7 +118,7 @@ h1 {
     margin: auto;
 }
 
-/* Base nieve */
+
 .base-nieve {
     width: 160px;
     height: 18px;
@@ -127,7 +127,7 @@ h1 {
     margin: 5px auto;
 }
 
-/* Decoraciones abajo */
+
 .decoraciones {
     display: flex;
     justify-content: center;
@@ -144,7 +144,7 @@ h1 {
 .r2 { background: #ff6666; }
 .r3 { background: #990000; }
 
-/* Luces */
+
 .light {
     position: absolute;
     width: 12px;
@@ -153,7 +153,7 @@ h1 {
     box-shadow: 0 0 8px currentColor;
 }
 
-/* Nieve */
+
 .snow {
     position: absolute;
     top: -10px;
@@ -172,7 +172,7 @@ footer {
     font-size: 15px;
     color: #b30000;
 }
-/* Lazo */
+
 .lazo {
     position: absolute;
     top: 35px;
@@ -201,7 +201,7 @@ footer {
     right: -18px;
 }
 
-/* Bolas */
+
 .bola {
     position: absolute;
     width: 12px;
@@ -221,7 +221,7 @@ footer {
 .b3 { top: 130px; left: -60px; }
 .b4 { top: 150px; left: 50px; background: red; }
 
-/* Brillos flotantes */
+
 .sparkle {
     position: absolute;
     width: 6px;
@@ -237,7 +237,7 @@ footer {
     100% { transform: translateY(-40px); opacity: 0; }
 }
 
-/* Responsive */
+
 @media (max-width: 480px) {
     .escena {
         transform: scale(0.8);
@@ -251,6 +251,7 @@ footer {
         font-size: 16px;
     }
 }
+
 
 
 
