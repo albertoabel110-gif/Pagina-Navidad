@@ -171,4 +171,84 @@ footer {
     font-size: 15px;
     color: #b30000;
 }
+/* Lazo */
+.lazo {
+    position: absolute;
+    top: 35px;
+    left: -15px;
+    width: 30px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+}
+
+.lazo::before,
+.lazo::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 14px;
+    background: red;
+    border-radius: 50%;
+}
+
+.lazo::before {
+    left: -18px;
+}
+
+.lazo::after {
+    right: -18px;
+}
+
+/* Bolas */
+.bola {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: gold;
+    box-shadow: 0 0 6px gold;
+    animation: brilloBola 1.8s infinite alternate;
+}
+
+@keyframes brilloBola {
+    to { filter: brightness(1.6); }
+}
+
+.b1 { top: 70px; left: -40px; }
+.b2 { top: 100px; left: 20px; background: red; }
+.b3 { top: 130px; left: -60px; }
+.b4 { top: 150px; left: 50px; background: red; }
+
+/* Brillos flotantes */
+.sparkle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: rgba(255, 0, 0, 0.8);
+    border-radius: 50%;
+    animation: flotar 3s infinite ease-in-out;
+}
+
+@keyframes flotar {
+    0% { transform: translateY(0); opacity: 0.2; }
+    50% { opacity: 1; }
+    100% { transform: translateY(-40px); opacity: 0; }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .escena {
+        transform: scale(0.8);
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .mensaje {
+        font-size: 16px;
+    }
+}
+
 
