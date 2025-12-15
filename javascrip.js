@@ -1,7 +1,6 @@
 const tree = document.getElementById("tree");
 const colors = ["red", "gold", "white"];
 
-// Luces mejor distribuidas
 for (let i = 0; i < 26; i++) {
     const light = document.createElement("div");
     light.classList.add("light");
@@ -20,7 +19,6 @@ for (let i = 0; i < 26; i++) {
     }, 800);
 }
 
-// Nieve
 for (let i = 0; i < 100; i++) {
     const snow = document.createElement("div");
     snow.classList.add("snow");
@@ -32,7 +30,7 @@ for (let i = 0; i < 100; i++) {
     snow.style.opacity = Math.random();
     document.body.appendChild(snow);
 }
-// Brillos flotantes
+
 for (let i = 0; i < 20; i++) {
     const sparkle = document.createElement("div");
     sparkle.classList.add("sparkle");
@@ -41,4 +39,5 @@ for (let i = 0; i < 20; i++) {
     sparkle.style.animationDelay = Math.random() * 3 + "s";
     document.body.appendChild(sparkle);
 }
+
 
