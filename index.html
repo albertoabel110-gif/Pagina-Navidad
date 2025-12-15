@@ -2,13 +2,18 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Navidad Animada</title>
+    <title>Navidad Interactiva</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <h1>🎄 ¡Feliz Navidad! 🎅</h1>
-    <p class="mensaje">Que la magia de la Navidad ilumine tu camino ✨</p>
+    <h1>🎄 Navidad Mágica 🎄</h1>
+    <p class="mensaje">Haz clic en el árbol para cambiar los colores ✨</p>
+
+    <div class="controles">
+        <button id="musicBtn">🎶 Música</button>
+        <button id="rainbowBtn">🌈 Modo Arcoíris</button>
+    </div>
 
     <div class="escena">
         <div class="estrella">⭐</div>
@@ -29,10 +34,13 @@
     </div>
 
     <footer>
-        ✨ Animación Navideña en HTML, CSS y JS ✨
+        ✨ Interfaz Navideña Interactiva | HTML • CSS • JS ✨
     </footer>
+
+    <audio id="music" src="music.mp3" loop></audio>
 
     <script src="script.js"></script>
 </body>
 </html>
+
 
