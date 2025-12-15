@@ -32,3 +32,13 @@ for (let i = 0; i < 100; i++) {
     snow.style.opacity = Math.random();
     document.body.appendChild(snow);
 }
+// Brillos flotantes
+for (let i = 0; i < 20; i++) {
+    const sparkle = document.createElement("div");
+    sparkle.classList.add("sparkle");
+    sparkle.style.left = Math.random() * 100 + "vw";
+    sparkle.style.top = Math.random() * 100 + "vh";
+    sparkle.style.animationDelay = Math.random() * 3 + "s";
+    document.body.appendChild(sparkle);
+}
+
