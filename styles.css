@@ -32,6 +32,7 @@ h1 {
     position: relative;
     width: 320px;
     height: 460px;
+    margin-top: 30px; 
 }
 
 /* Movimiento general */
@@ -250,5 +251,6 @@ footer {
         font-size: 16px;
     }
 }
+
 
 
