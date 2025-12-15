@@ -20,22 +20,21 @@ h1 {
 }
 
 .mensaje {
-    width: 80%;
-    max-width: 600px;
+    max-width: 650px;
     text-align: center;
     font-size: 18px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     color: #800000;
 }
 
 /* Escena */
 .escena {
     position: relative;
-    width: 300px;
-    height: 420px;
+    width: 320px;
+    height: 460px;
 }
 
-/* Árbol centrado */
+/* Movimiento general */
 .tree-wrapper {
     position: relative;
     animation: balanceo 4s ease-in-out infinite;
@@ -50,11 +49,11 @@ h1 {
 /* Estrella */
 .estrella {
     position: absolute;
-    top: -35px;
+    top: -38px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 42px;
-    animation: brillo 1.5s infinite alternate;
+    animation: brillo 1.4s infinite alternate;
 }
 
 @keyframes brillo {
@@ -67,29 +66,47 @@ h1 {
     margin: auto;
     width: 0;
     height: 0;
-    border-left: 120px solid transparent;
-    border-right: 120px solid transparent;
-    border-bottom: 220px solid #0f8a3c;
+    border-left: 125px solid transparent;
+    border-right: 125px solid transparent;
+    border-bottom: 230px solid #0f8a3c;
 }
 
+/* Capas */
 .tree::before {
     content: '';
     position: absolute;
-    top: 45px;
-    left: -95px;
-    border-left: 95px solid transparent;
-    border-right: 95px solid transparent;
-    border-bottom: 170px solid #0b6f31;
+    top: 50px;
+    left: -100px;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 180px solid #0b6f31;
 }
 
 .tree::after {
     content: '';
     position: absolute;
-    top: 90px;
+    top: 100px;
+    left: -75px;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 130px solid #0e7c3a;
+}
+
+/* Guirnaldas */
+.guirnalda {
+    position: absolute;
+    width: 180px;
+    height: 90px;
+    border-bottom: 3px solid gold;
+    border-radius: 50%;
+    top: 70px;
+    left: -90px;
+}
+
+.guirnalda.g2 {
+    top: 120px;
+    width: 140px;
     left: -70px;
-    border-left: 70px solid transparent;
-    border-right: 70px solid transparent;
-    border-bottom: 120px solid #0e7c3a;
 }
 
 /* Tronco */
@@ -100,13 +117,39 @@ h1 {
     margin: auto;
 }
 
+/* Base nieve */
+.base-nieve {
+    width: 160px;
+    height: 18px;
+    background: white;
+    border-radius: 50%;
+    margin: 5px auto;
+}
+
+/* Decoraciones abajo */
+.decoraciones {
+    display: flex;
+    justify-content: center;
+}
+
+.regalo {
+    width: 34px;
+    height: 34px;
+    margin: 6px;
+    border-radius: 6px;
+}
+
+.r1 { background: #cc0000; }
+.r2 { background: #ff6666; }
+.r3 { background: #990000; }
+
 /* Luces */
 .light {
     position: absolute;
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
-    box-shadow: 0 0 10px currentColor;
+    box-shadow: 0 0 8px currentColor;
 }
 
 /* Nieve */
@@ -128,3 +171,4 @@ footer {
     font-size: 15px;
     color: #b30000;
 }
+
