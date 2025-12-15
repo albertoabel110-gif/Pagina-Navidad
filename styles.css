@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 /* Fondo animado */
 body {
     margin: 0;
@@ -20,14 +24,32 @@ body {
 }
 
 h1 {
-    margin-top: 15px;
-    font-size: 42px;
-    animation: flotar 3s ease-in-out infinite;
+    margin-top: 10px;
+    font-size: 40px;
 }
 
 .mensaje {
-    font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+/* Botones */
+.controles {
+    margin-bottom: 10px;
+}
+
+button {
+    background: #ff3b3b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #ff6b6b;
 }
 
 /* Escena */
@@ -42,8 +64,8 @@ h1 {
     position: absolute;
     top: -30px;
     left: 160px;
-    font-size: 42px;
-    animation: girar 3s linear infinite, brillo 1.2s infinite alternate;
+    font-size: 40px;
+    animation: girar 3s linear infinite, brillo 1.5s infinite alternate;
 }
 
 @keyframes girar {
@@ -52,11 +74,10 @@ h1 {
 }
 
 @keyframes brillo {
-    from { filter: brightness(1); }
-    to { filter: brightness(1.6); }
+    to { filter: brightness(1.7); }
 }
 
-/* Árbol con movimiento */
+/* Árbol */
 .tree-wrapper {
     animation: balanceo 4s ease-in-out infinite;
 }
@@ -67,7 +88,6 @@ h1 {
     100% { transform: rotate(-2deg); }
 }
 
-/* Árbol */
 .tree {
     position: relative;
     margin: auto;
@@ -98,7 +118,6 @@ h1 {
     border-bottom: 120px solid #0e7c3a;
 }
 
-/* Tronco */
 .trunk {
     width: 45px;
     height: 55px;
@@ -119,7 +138,6 @@ h1 {
 .regalos {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
 }
 
 .regalo {
@@ -131,16 +149,15 @@ h1 {
 }
 
 @keyframes rebotar {
-    from { transform: translateY(0); }
     to { transform: translateY(-10px); }
 }
 
-.rojo { background: #ff3b3b; }
-.verde { background: #00ff88; }
-.azul { background: #3b82ff; }
-.morado { background: #a855f7; }
+.rojo { background: red; }
+.verde { background: lime; }
+.azul { background: dodgerblue; }
+.morado { background: purple; }
 
-/* Santa volando */
+/* Santa */
 .santa {
     position: absolute;
     top: 80px;
@@ -150,28 +167,12 @@ h1 {
 }
 
 @keyframes volar {
-    from { left: -60px; }
     to { left: 380px; }
 }
 
-/* Nieve */
-.snow {
-    position: absolute;
-    top: -10px;
-    background: white;
-    border-radius: 50%;
-    animation: fall linear infinite;
-}
-
-@keyframes fall {
-    to {
-        transform: translateY(100vh);
+/* Responsive */
+@media (max-width: 500px) {
+    .escena {
+        transform: scale(0.8);
     }
 }
-
-footer {
-    position: absolute;
-    bottom: 15px;
-    font-size: 16px;
-}
-
